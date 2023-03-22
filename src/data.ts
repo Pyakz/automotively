@@ -2,7 +2,7 @@ import { Vehicle } from "./types";
 
 export const CARS: Vehicle[] = [
   {
-    vin: "1HGCM82633A004352",
+    vin: "9FA46P0HDDD7E3963",
     make: "Honda",
     model: "Accord",
     year: 2003,
@@ -79,7 +79,7 @@ export const CARS: Vehicle[] = [
     accident_history: [],
   },
   {
-    vin: "5GAKRCKD5FJ126865",
+    vin: "9FA46P0HDDD7E39677",
     make: "Buick",
     model: "Enclave",
     year: 2015,
@@ -119,7 +119,7 @@ export const CARS: Vehicle[] = [
     ],
   },
   {
-    vin: "JTEBU14R768089834",
+    vin: "5FA46P0HDDD7E396533",
     make: "Toyota",
     model: "4Runner",
     year: 2006,
@@ -163,8 +163,47 @@ export const CARS: Vehicle[] = [
       },
     ],
   },
+
   {
-    vin: "5GAKRCKD5FJ126866",
+    vin: "5FA46P0HD7E396533",
+    make: "Chevrolet",
+    model: "Cruze",
+    year: 2016,
+    price: 12999,
+    image_url:
+      "https://www.cstatic-images.com/car-pictures/xl/USC60CHC301A021001.png",
+    gallery: [
+      "https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/ExtraImages/20120620034207__DSC1590.JPG&w=726&h=482&q=75&c=1",
+      "https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/ExtraImages/20120620034201__DSC1540.JPG",
+      "https://imgcdn.zigwheels.ph/large/gallery/interior/3/855/chevrolet-cruze-2018-dashboard-view-966618.jpg",
+    ],
+    ownership_history: [
+      {
+        owner: "David Lee",
+        start_date: "2016-06-01",
+        end_date: "2019-10-20",
+      },
+      {
+        owner: "Emily Davis",
+        start_date: "2019-10-21",
+        end_date: null,
+      },
+    ],
+    accident_history: [
+      {
+        date: "2018-04-05",
+        description:
+          "Rear-end collision with another vehicle. No injuries reported.",
+      },
+      {
+        date: "2020-09-12",
+        description:
+          "Side collision with another vehicle. Minor injuries reported.",
+      },
+    ],
+  },
+  {
+    vin: "5FA6P0HD7E396533",
     make: "Buick",
     model: "Enclave",
     year: 2015,
@@ -201,7 +240,7 @@ export const CARS: Vehicle[] = [
     ],
   },
   {
-    vin: "1C4RJFBG2GC473159",
+    vin: "3FA6P0HD7ER22396533",
     make: "Jeep",
     model: "Grand Cherokee",
     year: 2016,
@@ -233,6 +272,44 @@ export const CARS: Vehicle[] = [
         date: "2017-09-10",
         description:
           "Rear-end collision with another vehicle. No injuries reported.",
+      },
+    ],
+  },
+  {
+    vin: "3FA6P0HD7ER223965",
+    make: "Ford",
+    model: "Fusion",
+    year: 2014,
+    price: 8999,
+    image_url:
+      "https://www.cars.com/i/large/in/v2/stock_photos/e27bf378-e3bb-496a-8695-2be5a93f2c97/63212197-d4f6-4ba0-ba69-b4aac4d6cf33.png",
+    gallery: [
+      "https://crdms.images.consumerreports.org/c_lfill,w_720,q_auto,f_auto/prod/cars/chrome/white/2013FRD015a_640_12",
+      "https://o.aolcdn.com/images/dims3/GLOB/legacy_thumbnail/800x450/format/jpg/quality/85/http://www.blogcdn.com/www.autoblog.com/media/2012/09/2013-ford-fusion-fd.jpg",
+      "https://images.dealer.com/evox/stills_0640/MY2013/8503/8503_st0640_089.jpg",
+      "https://bidfax.info/uploads/posts/2019-03/01/ford-fusion-se-2013-3fa6p0hr7dr205450-img1.jpg",
+    ],
+    ownership_history: [
+      {
+        owner: "John Smith",
+        start_date: "2014-05-20",
+        end_date: "2017-09-30",
+      },
+      {
+        owner: "Sarah Johnson",
+        start_date: "2017-10-01",
+        end_date: null,
+      },
+    ],
+    accident_history: [
+      {
+        date: "2016-08-10",
+        description: "Minor fender bender. No injuries reported.",
+      },
+      {
+        date: "2019-02-22",
+        description:
+          "Side collision with another vehicle. Minor injuries reported.",
       },
     ],
   },

@@ -4,6 +4,7 @@ import Vehicle from "./Vehicle";
 const VehicleList = () => {
   const { store, filteredVehicles } = useStore();
   const vehiclesList = filteredVehicles(store);
+
   return (
     <>
       <h2 className="text-slate-300 my-5 text-end">

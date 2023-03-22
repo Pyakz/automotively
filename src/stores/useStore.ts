@@ -1,6 +1,7 @@
 import { create } from "zustand";
 import { CARS } from "../data";
 import { Vehicle } from "../types";
+import { persist } from "zustand/middleware";
 
 type TStore = {
   page: number;
@@ -19,7 +20,7 @@ type TStoreObject = {
 const defaultValues: TStore = {
   page: 1,
   query: "",
-  pageSize: 5,
+  pageSize: 6,
 };
 
 export const useStore = create<TStoreObject>((set) => ({

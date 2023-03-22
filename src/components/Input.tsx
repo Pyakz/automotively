@@ -6,7 +6,7 @@ interface IInputProps {
   type?: string;
   className?: string;
   onChange: (value: string) => void;
-  value?: string;
+  defaultValue?: string;
 }
 
 const Input = ({
@@ -17,6 +17,7 @@ const Input = ({
   type = "text",
   className,
   onChange,
+  defaultValue,
 }: IInputProps) => {
   return (
     <div className={`relative mt-2 rounded-lg sm:w-auto w-full ${className}`}>
@@ -26,6 +27,7 @@ const Input = ({
         </div>
       )}
       <input
+        defaultValue={defaultValue}
         onChange={(e) => onChange(e.target.value)}
         type={type}
         name={name}
