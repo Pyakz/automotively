@@ -1,5 +1,5 @@
 import { isEmpty } from "lodash";
-import moment, { isMoment } from "moment";
+import moment from "moment";
 import { FiArrowLeft } from "react-icons/fi";
 import { useNavigate, useParams } from "react-router-dom";
 import { useStore } from "../../../stores/useStore";

@@ -1,10 +1,10 @@
 import { NavLink } from "react-router-dom";
 
-type Props = {
+type VehicleProps = {
   car: any;
 };
 
-const Vehicle = (props: Props) => {
+const Vehicle = (props: VehicleProps) => {
   const { vin, make, model, year, price, image_url } = props.car;
 
   return (
