@@ -13,7 +13,7 @@ const Vehicle = (props: VehicleProps) => {
     <NavLink
       data-testid='vehicle'
       to={`/vehicles/${vin}`}
-      className='col-span-1 row-span-2 group cursor-pointer p-3 bg-slate-800  rounded-md  hover:bg-slate-700 ease-in-out duration-500'
+      className='animate__animated animate__fadeIn col-span-1 row-span-2 group cursor-pointer p-3 bg-slate-800  rounded-md  hover:bg-slate-700 ease-in-out duration-500'
     >
       <div className='top-0 w-full'>
         <h2 className='group-hover:text-slate-100  font-bold text-2xl text-slate-50'>
