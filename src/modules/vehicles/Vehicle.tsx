@@ -1,8 +1,9 @@
-import { NavLink } from 'react-router-dom';
 import React from 'react'; // always imports
+import { NavLink } from 'react-router-dom';
+import { Vehicle } from '../../utils/types';
 
 type VehicleProps = {
-  car: any;
+  car: Vehicle;
 };
 
 const Vehicle = (props: VehicleProps) => {

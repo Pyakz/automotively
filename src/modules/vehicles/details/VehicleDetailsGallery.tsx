@@ -19,7 +19,7 @@ const VehicleDetailsGallery = ({ gallery, vehicleName }: VehicleDetailsGalleryPr
         showCloseIcon={true}
         elementClassNames='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-5 gap-2'
       >
-        {gallery?.map((photo: any, index) => (
+        {gallery?.map((photo: string, index) => (
           <a href={photo} key={photo + index} data-src={photo}>
             <img
               src={photo}
