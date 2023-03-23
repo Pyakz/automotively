@@ -1,6 +1,6 @@
 import { create } from 'zustand';
-import { CARS } from '../data';
-import { Vehicle } from '../types';
+import { CARS } from '../utils/data';
+import { Vehicle } from '../utils/types';
 
 type TStore = {
   page: number;

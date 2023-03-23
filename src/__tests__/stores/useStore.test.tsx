@@ -1,5 +1,5 @@
-import { Vehicle } from '../../types';
-import { CARS } from '../../data';
+import { Vehicle } from '../../utils/types';
+import { CARS } from '../../utils/data';
 import { getFilteredVehicles } from '../../stores/useStore';
 
 describe('useStore: getFilteredVehicles', () => {
