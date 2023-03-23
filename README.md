@@ -28,6 +28,7 @@ To install and run this project, follow these steps:
 
 - [Vite](https://vitejs.dev/guide/)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [Light Gallery](https://www.lightgalleryjs.com/docs/react/)
 - [Jest](https://jestjs.io/)
 - [Husky](https://typicode.github.io/husky/#/?id=install)
 
