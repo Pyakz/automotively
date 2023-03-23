@@ -38,13 +38,15 @@ Here is an overview of the project's folder structure:
 - `__tests__`: Contains test files.
 - `assets`: Contains static assets such as images, fonts, and stylesheets.
 - `components`: Contains reusable components.
-- `stores`: Contains all the zustand stores.
 - `modules`: Contains the main functionality of the application, any new modules will be included here
     - `nav`: Anything that involves navigation is in here.
     - `vehicles`: Contains the pages and components for the vehicles section.
+- `stores`: Contains all the zustand stores.
+- `styles`: Containsa the css files.
 - `utils`: Contains helper functions, constants, types, and other utilities.
     - `data.ts`: Mock vehicles data
     - `type.d.ts`: Some types that are used and will be used on many sections, put it here.
+- `App.tsx`: The entry points of the app, where there Route are defined.
 
 
 ## Contributing
