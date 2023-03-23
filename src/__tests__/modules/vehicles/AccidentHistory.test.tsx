@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import AccidentHistory from '../../../modules/vehicles/details/AccidentHistory';
 import moment from 'moment';
+import { CARS } from '../../../utils/data';
 
 describe('AccidentHistory', () => {
   it('renders "No recorded owners yet." when history is empty', () => {
@@ -10,21 +11,13 @@ describe('AccidentHistory', () => {
   });
 
   it('renders a list of owners when history is not empty', () => {
-    const history = [
-      {
-        date: '2018-04-05',
-        description: 'Rear-end collision with another vehicle. No injuries reported.',
-      },
-      {
-        date: '2020-09-12',
-        description: 'Side collision with another vehicle. Minor injuries reported.',
-      },
-    ];
+    const history = CARS[0].accident_history;
+
     const { getByText, getAllByRole } = render(<AccidentHistory history={history} />);
     expect(getByText('Accident History')).toBeInTheDocument();
 
     const listItems = getAllByRole('listitem');
-    expect(listItems).toHaveLength(2);
+    expect(listItems).toHaveLength(history.length);
 
     history.forEach((history) => {
       expect(getByText(moment(history.date).format('ll'))).toBeInTheDocument();
