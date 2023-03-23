@@ -10,7 +10,7 @@ type VehicleDetailsGalleryProps = {
 
 const VehicleDetailsGallery = ({ gallery, vehicleName }: VehicleDetailsGalleryProps) => {
   return (
-    <div className='border-t-2 w-full border-slate-700 md:p-5'>
+    <div className='animate__animated animate__fadeIn animate__slower  border-t-2 w-full border-slate-700 md:p-5'>
       <h2 className='text-2xl font-bold mt-3'>Gallery</h2>
       <LightGallery
         speed={500}

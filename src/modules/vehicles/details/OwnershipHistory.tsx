@@ -9,7 +9,7 @@ type OwnershipHistoryProps = {
 
 const OwnershipHistory = ({ history }: OwnershipHistoryProps) => {
   return (
-    <div className='w-full mt-5'>
+    <div className='w-full mt-5 animate__animated animate__fadeIn animate__delay'>
       <h2 className='text-lg font-bold'>Ownership History</h2>
       <ul className='p-3' data-testid='items'>
         {isEmpty(history) && <h3 className='text-lg'>No recorded owners yet.</h3>}

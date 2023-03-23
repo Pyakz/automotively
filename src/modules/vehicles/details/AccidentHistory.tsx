@@ -9,7 +9,10 @@ type AccidentHistoryProps = {
 
 const AccidentHistory = ({ history }: AccidentHistoryProps) => {
   return (
-    <div className='w-full' data-testid='AccidentHistory'>
+    <div
+      className='w-full animate__animated animate__fadeIn animate__delay'
+      data-testid='AccidentHistory'
+    >
       <h2 className='text-lg font-bold'>Accident History</h2>
       <ul className='p-3'>
         {isEmpty(history) && <h3 className='text-lg'>No recorded accident yet.</h3>}

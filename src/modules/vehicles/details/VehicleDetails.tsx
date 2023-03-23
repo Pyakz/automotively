@@ -22,7 +22,7 @@ const VehicleDetails = () => {
         />
       </nav>
       <div className='mx-auto grid grid-cols-1 md:grid-cols-2 gap-3 md:p-5 md:mt-15 mt-10'>
-        <div className='col-span-2 md:col-span-1'>
+        <div className='col-span-2 md:col-span-1 animate__animated animate__fadeIn'>
           <h1 className='md:text-4xl text-3xl font-bold md:text-start text-center'>
             {vehicle?.make} {vehicle?.model}
           </h1>
@@ -41,7 +41,7 @@ const VehicleDetails = () => {
             </h2>
           </div>
         </div>
-        <div className='col-span-2 md:col-span-1 md:border-l-2 border-t-2 md:border-t-0  md:pt-0 pt-3 md:mt-0 mt-3 md:px-5 border-slate-700'>
+        <div className='animate__animated animate__fadeIn animate__slow col-span-2 md:col-span-1 md:border-l-2 border-t-2 md:border-t-0  md:pt-0 pt-3 md:mt-0 mt-3 md:px-5 border-slate-700'>
           <div className=''>
             <h2 className='text-2xl font-bold'>Details</h2>
             <div className=''>
