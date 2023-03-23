@@ -1,4 +1,5 @@
-import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
+import React from 'react'; // always imports
 
 type VehicleProps = {
   car: any;
@@ -9,26 +10,26 @@ const Vehicle = (props: VehicleProps) => {
 
   return (
     <NavLink
+      data-testid='vehicle'
       to={`/vehicles/${vin}`}
-      className="col-span-1 row-span-2 group cursor-pointer p-3 bg-slate-800  rounded-md  hover:bg-slate-700 ease-in-out duration-500"
+      className='col-span-1 row-span-2 group cursor-pointer p-3 bg-slate-800  rounded-md  hover:bg-slate-700 ease-in-out duration-500'
     >
-      <div className="top-0 w-full ">
-        <h2 className="group-hover:text-slate-100  font-bold text-2xl text-slate-50">
+      <div className='top-0 w-full'>
+        <h2 className='group-hover:text-slate-100  font-bold text-2xl text-slate-50'>
           {make} {model}
         </h2>
-        <h2 className="group-hover:text-slate-100  text-slate-50">{year}</h2>
+        <h2 className='group-hover:text-slate-100  text-slate-50'>{year}</h2>
       </div>
       <img
         src={image_url}
         alt={make + model}
-        className="maxW-[350px] md:h-[250px]  group-hover:scale-110 ease-in-out duration-300 mx-auto "
+        data-testid='vehicle_img'
+        className='maxW-[350px] md:h-[250px]  group-hover:scale-110 ease-in-out duration-300 mx-auto '
       />
-      <div className="">
-        <h2 className="group-hover:text-slate-100 text-slate-50 text-lg">
-          VIN: {vin}
-        </h2>
-        <h2 className="group-hover:text-slate-100 text-slate-50 text-2xl font-bold">
-          ${price.toLocaleString("en-US")}
+      <div className=''>
+        <h2 className='group-hover:text-slate-100 text-slate-50 text-lg'>VIN: {vin}</h2>
+        <h2 className='group-hover:text-slate-100 text-slate-50 text-2xl font-bold'>
+          ${price.toLocaleString('en-US')}
         </h2>
       </div>
     </NavLink>

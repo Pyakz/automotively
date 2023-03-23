@@ -1,3 +1,4 @@
+import React from 'react'; // always import
 interface IInputProps {
   rightIcon?: JSX.Element;
   leftIcon?: JSX.Element;
@@ -14,7 +15,7 @@ const Input = ({
   leftIcon,
   placeholder,
   name,
-  type = "text",
+  type = 'text',
   className,
   onChange,
   defaultValue,
@@ -22,7 +23,7 @@ const Input = ({
   return (
     <div className={`relative mt-2 rounded-lg sm:w-auto w-full ${className}`}>
       {rightIcon && (
-        <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+        <div className='pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3'>
           {rightIcon}
         </div>
       )}
@@ -32,6 +33,7 @@ const Input = ({
         type={type}
         name={name}
         id={name}
+        data-testid={name}
         className={`
          block 
          rounded-lg 
@@ -42,11 +44,11 @@ const Input = ({
        border-slate-500 
        focus:border-slate-400 
          focus:outline-none    
-         py-1.5 ${rightIcon ? "pl-9" : "px-3"} pr-20`}
+         py-1.5 ${rightIcon ? 'pl-9' : 'px-3'} pr-20`}
         placeholder={placeholder}
       />
       {leftIcon && (
-        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
+        <div className='pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3'>
           {leftIcon}
         </div>
       )}

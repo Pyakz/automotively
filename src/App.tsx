@@ -1,9 +1,9 @@
-import Pagination from "./components/Pagination";
-import Nav from "./modules/nav/Nav";
-import { useStore } from "./stores/useStore";
-import VehicleList from "./modules/vehicles/VehicleList";
-import { Route, Routes } from "react-router-dom";
-import VehicleDetails from "./modules/vehicles/details/VehicleDetails";
+import Pagination from './components/Pagination';
+import Nav from './modules/nav/Nav';
+import { useStore } from './stores/useStore';
+import VehicleList from './modules/vehicles/VehicleList';
+import { Route, Routes } from 'react-router-dom';
+import VehicleDetails from './modules/vehicles/details/VehicleDetails';
 
 function App() {
   const { store, setFilters, lastPage } = useStore();
@@ -11,7 +11,7 @@ function App() {
   return (
     <Routes>
       <Route
-        path="/"
+        path='/'
         element={
           <>
             <Nav />
@@ -25,7 +25,7 @@ function App() {
           </>
         }
       />
-      <Route path="/vehicles/:vin" element={<VehicleDetails />} />
+      <Route path='/vehicles/:vin' element={<VehicleDetails />} />
     </Routes>
   );
 }

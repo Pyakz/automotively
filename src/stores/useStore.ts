@@ -1,7 +1,6 @@
-import { create } from "zustand";
-import { CARS } from "../data";
-import { Vehicle } from "../types";
-import { persist } from "zustand/middleware";
+import { create } from 'zustand';
+import { CARS } from '../data';
+import { Vehicle } from '../types';
 
 type TStore = {
   page: number;
@@ -19,7 +18,7 @@ type TStoreObject = {
 
 const defaultValues: TStore = {
   page: 1,
-  query: "",
+  query: '',
   pageSize: 6,
 };
 
@@ -27,20 +26,18 @@ export const useStore = create<TStoreObject>((set) => ({
   store: defaultValues,
   setFilters: (store: TStore) => set(() => ({ store })),
   vehicles: CARS,
-  filteredVehicles: (filters: TStore) =>
-    getFilteredVehicles(filters).filteredVehicles,
+  filteredVehicles: (filters: TStore) => getFilteredVehicles(filters).filteredVehicles,
   lastPage: (filters: TStore) => getFilteredVehicles(filters).lastPage,
 }));
 
 // This function return anything that matches the current filters and also returns the lastPage
-const getFilteredVehicles = (
-  filters: TStore
+export const getFilteredVehicles = (
+  filters: TStore,
 ): { filteredVehicles: Vehicle[]; lastPage: number } => {
-  const { page, query = "", pageSize = 10 } = filters;
+  const { page, query = '', pageSize = 10 } = filters;
   const filteredVehicles = CARS.filter(({ make, model, vin, year, price }) => {
     // Filter by make, model, or VIN
-    const searchString =
-      `${make} ${model} ${vin} ${year} ${price}`.toLowerCase();
+    const searchString = `${make} ${model} ${vin} ${year} ${price}`.toLowerCase();
     return searchString.includes(query.toLowerCase());
   });
 
