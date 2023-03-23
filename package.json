@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "test:watch": "jest --watch src/__tests__",
     "format": "prettier --write \"src/**/*.@(js|jsx|ts|tsx)\"",
-    "prettier": "npx prettier src test --check"
+    "prettier": "prettier src test --check"
   },
   "dependencies": {
     "lightgallery": "^2.7.1",
