@@ -26,6 +26,7 @@ To install and run this project, follow these steps:
 
 ## Technologies
 
+- [React](https://react.dev/)
 - [Vite](https://vitejs.dev/guide/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Light Gallery](https://www.lightgalleryjs.com/docs/react/)
