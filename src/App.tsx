@@ -23,6 +23,11 @@ function App() {
               lastPage={lastPage(store)}
               className='justify-end'
             />
+            <footer className='container text-center mx-auto pb-3'>
+              <a href='https://www.banguismv.live' target='_blank' className='text-slate-700'>
+                &copy; Mark Vergel Banguis
+              </a>
+            </footer>
           </>
         }
       />
