@@ -31,6 +31,7 @@ To install and run this project, follow these steps:
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Light Gallery](https://www.lightgalleryjs.com/docs/react/)
 - [Jest](https://jestjs.io/)
+- [Playwright](https://playwright.dev/)
 - [Husky](https://typicode.github.io/husky/#/?id=install)
 - [Github Workflow](https://docs.github.com/en/actions/using-workflows)
 
@@ -38,7 +39,8 @@ To install and run this project, follow these steps:
 
 Here is an overview of the project's folder structure:
 
-- `__tests__`: Contains test files.
+- `__tests__`: Contains units tests files.
+- `__e2e__`: Contains end to end tests files.
 - `assets`: Contains static assets such as images, fonts, and stylesheets.
 - `components`: Contains reusable components.
 - `modules`: Contains the main functionality of the application, any new modules will be included here
