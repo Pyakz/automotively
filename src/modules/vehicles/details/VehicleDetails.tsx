@@ -1,3 +1,4 @@
+import React from 'react';
 import { FiArrowLeft } from 'react-icons/fi';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useStore } from '../../../stores/useStore';
@@ -10,6 +11,10 @@ const VehicleDetails = () => {
   const params = useParams();
   const vehicle = vehicles.find((vehicle) => vehicle.vin === params.vin);
   const navigate = useNavigate();
+
+  React.useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  }, []);
 
   return (
     <div className='text-slate-50' date-testid='vehicle_details_page'>
