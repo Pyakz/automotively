@@ -10,7 +10,6 @@ export interface Vehicle {
   accident_history: AccidentHistory[];
   interior_color?: string;
   exterior_color?: string;
-  drive_train?: string;
   fuel_type?: string;
 }
 

@@ -7,6 +7,9 @@ export const CARS: Vehicle[] = [
     model: 'Accord',
     year: 2003,
     price: 5999,
+    interior_color: 'Gray',
+    exterior_color: 'White',
+    fuel_type: '25-35 / Gasoline',
     image_url:
       'https://s3.us-east-2.amazonaws.com/dealer-inspire-vps-vehicle-images/110007426/1HGCY2F55PA005303/c49d4d2011f235a14bf2dea29c377240.png',
     gallery: [
@@ -51,6 +54,9 @@ export const CARS: Vehicle[] = [
     model: 'Bolt',
     year: 2018,
     price: 23999,
+    interior_color: 'Black',
+    exterior_color: 'Gray',
+    fuel_type: '25-35 / Gasoline',
     image_url:
       'https://crdms.images.consumerreports.org/c_lfill,w_470,q_auto,f_auto/prod/cars/cr/model-years/13575-2022-chevrolet-bolt',
     gallery: [
@@ -82,6 +88,9 @@ export const CARS: Vehicle[] = [
     model: 'Enclave',
     year: 2015,
     price: 18999,
+    interior_color: 'Black',
+    exterior_color: 'White',
+    fuel_type: '25-35 / Gasoline',
     image_url:
       'https://www.motortrend.com/uploads/sites/10/2016/07/2017-buick-enclave-convenience-suv-angular-front.png',
     gallery: [
@@ -121,6 +130,9 @@ export const CARS: Vehicle[] = [
     model: '4Runner',
     year: 2006,
     price: 8999,
+    interior_color: 'Black',
+    exterior_color: 'White',
+    fuel_type: '25-35 / Gasoline',
     image_url:
       'https://www.toyotahawaii.com/on/demandware.static/-/Sites-Servco_master/default/dw309d220f/images/model/4Runner/360/ice-cap/23_4Runner_SR5_IceCap_1.png',
     gallery: [
@@ -159,13 +171,15 @@ export const CARS: Vehicle[] = [
       },
     ],
   },
-
   {
     vin: '5FA46P0HD7E396533',
     make: 'Chevrolet',
     model: 'Cruze',
     year: 2016,
     price: 12999,
+    interior_color: 'Black',
+    exterior_color: 'Blue',
+    fuel_type: '25-35 / Gasoline',
     image_url: 'https://www.cstatic-images.com/car-pictures/xl/USC60CHC301A021001.png',
     gallery: [
       'https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/ExtraImages/20120620034207__DSC1590.JPG&w=726&h=482&q=75&c=1',
@@ -201,6 +215,9 @@ export const CARS: Vehicle[] = [
     model: 'Enclave',
     year: 2015,
     price: 18999,
+    interior_color: 'Black',
+    exterior_color: 'White',
+    fuel_type: '25-35 / Gasoline',
     image_url:
       'https://www.motortrend.com/uploads/sites/10/2016/07/2017-buick-enclave-convenience-suv-angular-front.png',
     gallery: [
@@ -237,6 +254,9 @@ export const CARS: Vehicle[] = [
     model: 'Grand Cherokee',
     year: 2016,
     price: 21999,
+    interior_color: 'Black',
+    exterior_color: 'White',
+    fuel_type: '25-35 / Gasoline',
     image_url:
       'https://www.motortrend.com/uploads/sites/10/2016/07/2017-buick-enclave-convenience-suv-angular-front.png',
     gallery: [
@@ -271,7 +291,9 @@ export const CARS: Vehicle[] = [
     make: 'Ford',
     model: 'Fusion',
     year: 2014,
-    price: 8999,
+    price: 9000,
+    interior_color: 'Black',
+    exterior_color: 'Black',
     image_url:
       'https://www.cars.com/i/large/in/v2/stock_photos/e27bf378-e3bb-496a-8695-2be5a93f2c97/63212197-d4f6-4ba0-ba69-b4aac4d6cf33.png',
     gallery: [

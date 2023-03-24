@@ -39,12 +39,13 @@ const Input = ({
          rounded-lg 
        text-slate-50 
          bg-transparent
+         md:w-[300px]
          w-full 
          border
        border-slate-500 
        focus:border-slate-400 
          focus:outline-none    
-         py-1.5 ${rightIcon ? 'pl-9' : 'px-3'} pr-20`}
+         py-1.5 ${rightIcon ? 'pl-9' : 'px-3'} pr-5`}
         placeholder={placeholder}
       />
       {leftIcon && (

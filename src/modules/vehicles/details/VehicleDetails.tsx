@@ -56,15 +56,15 @@ const VehicleDetails = () => {
               </div>
               <div className='md:flex w-full md:justify-between md:items-center md:mt-3 mt-5'>
                 <h2 className='text-xl'>Interior Color:</h2>
-                <h2 className='font-bold text-xl'>Gray</h2>
+                <h2 className='font-bold text-xl'>{vehicle?.interior_color}</h2>
               </div>
               <div className='md:flex w-full justify-between md:items-center md:mt-3 mt-5'>
                 <h2 className='text-xl'>Exterior Color:</h2>
-                <h2 className='font-bold text-xl'>Black</h2>
+                <h2 className='font-bold text-xl'>{vehicle?.exterior_color}</h2>
               </div>
               <div className='md:flex w-full md:justify-between md:items-center md:mt-3 mt-5'>
                 <h2 className='text-xl'>MPG / Fuel Type</h2>
-                <h2 className='font-bold text-xl'>25-35 / Gasoline</h2>
+                <h2 className='font-bold text-xl'>{vehicle?.fuel_type}</h2>
               </div>
             </div>
           </div>

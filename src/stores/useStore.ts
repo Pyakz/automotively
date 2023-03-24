@@ -1,3 +1,4 @@
+import { omit } from 'lodash';
 import { create } from 'zustand';
 import { CARS } from '../utils/data';
 import { Vehicle } from '../utils/types';
@@ -35,9 +36,21 @@ export const getFilteredVehicles = (
   filters: TStore,
 ): { filteredVehicles: Vehicle[]; lastPage: number } => {
   const { page, query = '', pageSize = 10 } = filters;
-  const filteredVehicles = CARS.filter(({ make, model, vin, year, price }) => {
-    // Filter by make, model, or VIN
-    const searchString = `${make} ${model} ${vin} ${year} ${price}`.toLowerCase();
+
+  const filteredVehicles = CARS.filter((vehicle) => {
+    // remove the 'image_url', 'gallery', 'accident_history','interior_color' they will confuse the searching
+    const searchString = Object.values(
+      omit(vehicle, ['image_url', 'gallery', 'accident_history', 'interior_color', 'fuel_type']),
+    )
+      .flatMap((value) => {
+        if (Array.isArray(value)) {
+          return value.flatMap((item) => Object.values(item));
+        }
+        return value;
+      })
+      .join(' ')
+      .toLowerCase();
+
     return searchString.includes(query.toLowerCase());
   });
 

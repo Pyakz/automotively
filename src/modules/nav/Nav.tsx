@@ -21,7 +21,7 @@ const Nav = () => {
       </div>
       <Input
         defaultValue={store.query || ''}
-        placeholder='Honda or 2003 or 5999'
+        placeholder='Honda, 2003, White, John Doe'
         onChange={(query: string) => debouncedHandleSearchChange(query)} // Use the debounced function instead of the original
         rightIcon={<FiSearch color='gray' />}
       />
