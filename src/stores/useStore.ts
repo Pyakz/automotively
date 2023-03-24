@@ -1,4 +1,4 @@
-import { omit } from 'lodash';
+import { isArray, omit, pick } from 'lodash';
 import { create } from 'zustand';
 import { CARS } from '../utils/data';
 import { Vehicle } from '../utils/types';
@@ -36,21 +36,23 @@ export const getFilteredVehicles = (
   filters: TStore,
 ): { filteredVehicles: Vehicle[]; lastPage: number } => {
   const { page, query = '', pageSize = 10 } = filters;
-
   const filteredVehicles = CARS.filter((vehicle) => {
     // remove the 'image_url', 'gallery', 'accident_history','interior_color' they will confuse the searching
-    const searchString = Object.values(
-      omit(vehicle, ['image_url', 'gallery', 'accident_history', 'interior_color', 'fuel_type']),
-    )
-      .flatMap((value) => {
-        if (Array.isArray(value)) {
-          return value.flatMap((item) => Object.values(item));
-        }
-        return value;
-      })
+    const car = omit(vehicle, [
+      'image_url',
+      'gallery',
+      'accident_history',
+      'interior_color',
+      'fuel_type',
+    ]);
+    const searchString = Object.values(car)
+      .flatMap((value) =>
+        // get the owner's name only, in the ownership object
+        // start and end date might confuse the user that searched the models year
+        isArray(value) ? value.flatMap((item) => Object.values(pick(item, 'owner'))) : value,
+      )
       .join(' ')
       .toLowerCase();
-
     return searchString.includes(query.toLowerCase());
   });
 

@@ -294,6 +294,7 @@ export const CARS: Vehicle[] = [
     price: 9000,
     interior_color: 'Black',
     exterior_color: 'Black',
+    fuel_type: '25-35 / Gasoline',
     image_url:
       'https://www.cars.com/i/large/in/v2/stock_photos/e27bf378-e3bb-496a-8695-2be5a93f2c97/63212197-d4f6-4ba0-ba69-b4aac4d6cf33.png',
     gallery: [
