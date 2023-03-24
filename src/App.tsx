@@ -21,6 +21,7 @@ function App() {
               pageRange={1}
               currentPage={store?.page || 1}
               lastPage={lastPage(store)}
+              className='justify-end'
             />
           </>
         }

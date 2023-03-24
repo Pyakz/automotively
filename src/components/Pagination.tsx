@@ -6,9 +6,16 @@ interface PaginationProps {
   pageRange?: number;
   currentPage: number;
   lastPage: number;
+  className?: string;
 }
 
-const Pagination = ({ currentPage, lastPage, onPageChange, pageRange = 2 }: PaginationProps) => {
+const Pagination = ({
+  currentPage,
+  lastPage,
+  onPageChange,
+  pageRange = 2,
+  className,
+}: PaginationProps) => {
   // Calculate the starting and ending pages to display based on current page
   let startPage = Math.max(1, currentPage - pageRange);
   let endPage = Math.min(lastPage, currentPage + pageRange);
@@ -38,7 +45,7 @@ const Pagination = ({ currentPage, lastPage, onPageChange, pageRange = 2 }: Pagi
   const prevButton = currentPage <= 1;
   const nextButton = currentPage >= lastPage;
   return (
-    <div className='flex items-center justify-center my-10' data-testid='pagination'>
+    <div className={`flex items-center my-10 ${className}`} data-testid='pagination'>
       {!prevButton && (
         <FiChevronLeft
           color='white'

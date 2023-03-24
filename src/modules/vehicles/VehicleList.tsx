@@ -6,7 +6,7 @@ const VehicleList = () => {
   const vehiclesList = filteredVehicles(store);
 
   return (
-    <>
+    <div className='flex flex-col flex-1 h-max'>
       <h2 className='text-slate-300 my-5 text-end'>Showing {vehiclesList?.length || 0} vehicles</h2>
       {vehiclesList.length === 0 ? (
         <h1 className='text-slate-300 text-3xl text-center w-full' data-testid='no-vehicle'>
@@ -22,7 +22,7 @@ const VehicleList = () => {
           ))}
         </div>
       )}
-    </>
+    </div>
   );
 };
 
