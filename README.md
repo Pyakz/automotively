@@ -1,5 +1,5 @@
 # Automotively
-![Screenshot 2023-03-23 at 1 22 15 PM](https://user-images.githubusercontent.com/49338297/227111168-4cddd1f3-15d4-47ff-a8d8-88c64027e4b8.png)
+![Screenshot 2023-03-24 at 11 32 53 PM](https://user-images.githubusercontent.com/49338297/227570819-cae552b6-b1ae-443e-b8ca-e5bc82dee13e.png)
 
 ## Overview
 Build a simple React App with the following pages for a hypothetical automotive company.
