@@ -32,6 +32,7 @@ To install and run this project, follow these steps:
 - [Light Gallery](https://www.lightgalleryjs.com/docs/react/)
 - [Jest](https://jestjs.io/)
 - [Husky](https://typicode.github.io/husky/#/?id=install)
+- [Github Workflow](https://docs.github.com/en/actions/using-workflows)
 
 ## Folder Structure
 
@@ -56,7 +57,7 @@ To contribute to this project, please follow these steps:
 
 1. Fork the repository.
 2. Create a branch for your feature or bug fix: `git checkout -b my-feature`
-3. Make changes and commit them: `git commit -am "Add new feature"`
+3. Make changes and commit them: `git commit -am "feat: new feature"`
 4. Push to the branch: `git push origin my-feature`
 5. Create a pull request.
 6. Check if all tests passed
